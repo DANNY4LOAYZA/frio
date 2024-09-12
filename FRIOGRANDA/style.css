@@ -1,0 +1,346 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 0, 55);
+    background-color: rgb(0, 0, 255); /* Azul */
+    font-weight: bold; /* Aplica negrita a todo el texto en el cuerpo */
+}
+
+.bod {
+    background-color: skyblue;
+}
+
+.navbar {
+    background-color: blue;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold; /* Aplica negrita al texto en la barra de navegación */
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .contact-info i {
+    margin-right: 5px;
+}
+
+.main-content {
+    margin-top: 80px; /* Adjust for navbar height */
+    padding: 20px;
+    color: orangered;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold; /* Aplica negrita al texto en el contenido principal */
+}
+
+.main-content .title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.main-content .cali {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.main-content .subtitles {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.main-content .mascota, .main-content .garantia {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.text-container {
+    max-width: 50%; /* Ajusta según sea necesario */
+}
+
+.centered-text {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y el resto del contenido */
+    font-weight: bold; /* Aplica negrita al texto centrado */
+}
+
+.title, .cali {
+    margin: 0;
+}
+
+.subtitles {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 1em;
+    margin: 20px 0;
+    text-align: left;
+    font-weight: bold; /* Aplica negrita a la descripción */
+}
+
+.main-content .text-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.main-content .image-column {
+    flex: 1;
+    text-align: center;
+}
+
+.main-content .image-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content .description {
+    font-size: 1em;
+    text-align: justify;
+    font-weight: bold; /* Aplica negrita a la descripción en el contenido principal */
+}
+
+.services-brands-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.services-brands-section .left-col,
+.services-brands-section .right-col {
+    width: 48%;
+}
+
+.services-brands-section .image-container img {
+    width: 100%;
+}
+
+.services-section {
+    padding: 20px;
+}
+
+.services-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold; /* Aplica negrita a los títulos de la sección de servicios */
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25, 25, 172); /* Fondo azul oscuro */
+    font-weight: bold; /* Aplica negrita a todo el texto en el cuerpo */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: blue;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold; /* Aplica negrita al texto en la barra de navegación */
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .contact-info i {
+    margin-right: 5px;
+}
+
+.subtitles {
+    color: orangered;
+    font-weight: bold; /* Aplica negrita a los subtítulos */
+}
+
+.somos {
+    color: white;
+    font-weight: bold; /* Aplica negrita al texto con la clase somos */
+}
+
+.cali {
+    color: orangered;
+    font-weight: bold; /* Aplica negrita al texto con la clase cali */
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-top: 80px; /* Ajuste para la altura de la navbar */
+    padding: 20px;
+    color: orangered; /* Color de texto */
+    text-align: center;
+    position: relative; /* Necesario para posicionar la imagen de GARANTIZADO */
+    font-weight: bold; /* Aplica negrita al texto en el contenido principal */
+}
+
+/* Imagen GARANTIZADO.jpg en la esquina inferior izquierda */
+.main-content .mascota {
+    position: absolute;
+    bottom: 20px; /* Ajusta según sea necesario */
+    left: 20px; /* Ajusta según sea necesario */
+    width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+    z-index: 1; /* Asegura que esté por encima del contenido */
+}
+
+/* Contenedor para alinear el texto al centro y la imagen a la derecha */
+.garantia-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente en el centro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px;
+}
+
+/* Contenedor para el texto centrado */
+.garantia-container .description {
+    max-width: 600px;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+    font-weight: bold; /* Aplica negrita al texto en el contenedor de garantía */
+}
+
+/* Imagen Linework2.png */
+.garantia-container img.linework {
+    max-width: 150px; /* Tamaño máximo ajustado para Linework2.png */
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.carousel-inner img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.container {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold; /* Aplica negrita a las etiquetas del formulario */
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: blue;
+    cursor: pointer;
+    font-weight: bold; /* Aplica negrita al texto del botón */
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el pie de página */
+.footer-container {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-top: 3px solid #4CAF50;
+    font-weight: bold; /* Aplica negrita al texto en el pie de página */
+}
+
+.footer-container .log img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-container .text-right i {
+    color: white;
+    margin: 0 5px;
+    font-size: 24px;
+}
+
+.footer-container .text-right p {
+    margin: 5px 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-right a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.text-right p {
+    margin: 5px 0;
+    font-weight: bold; /* Aplica negrita al texto en el contenedor de texto derecho */
+}
